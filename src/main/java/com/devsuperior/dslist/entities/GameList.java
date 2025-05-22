@@ -21,10 +21,9 @@ public class GameList {
 		
 	}
 	
-	public GameList(Long id, String nome) {
-		super();
+	public GameList(Long id, String name) {
 		this.id = id;
-		this.name = nome;
+		this.name = name;
 	}
 
 	public Long getId() {
@@ -35,12 +34,12 @@ public class GameList {
 		this.id = id;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String nome) {
-		this.name = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
@@ -59,6 +58,8 @@ public class GameList {
 		GameList other = (GameList) obj;
 		return Objects.equals(id, other.id);
 	}
+
+	
 
 	
 }
